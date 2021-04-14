@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:id="@+id/imageView">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:id="@+id/image1">
+        </ImageView>
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/progress_bar"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView"
+        >
+       <Button
+           android:id="@+id/openGalllery"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:text="OPEN GALLERY"
+           android:textStyle="bold"
+           android:textSize="39dp"
+           android:layout_marginTop="80dp"/>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffff"
+            app:menu="@menu/menu1"/>
+
+    </RelativeLayout>
+</RelativeLayout>
