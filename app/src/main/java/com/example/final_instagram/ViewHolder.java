@@ -18,5 +18,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public void setDetails(Context context,String caption,String Image){
 
 
+
     }
 }
